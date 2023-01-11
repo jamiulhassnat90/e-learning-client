@@ -1,6 +1,6 @@
 import React from "react";
 
-const CourseDetailsCard = ({ catagoryInfo }) => {
+const CourseDetailsCard = ({catagoryInfo} ) => {
   const {title,details} = catagoryInfo;
   return (
     <div className="flex flex-col">

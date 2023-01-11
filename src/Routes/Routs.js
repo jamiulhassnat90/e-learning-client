@@ -28,7 +28,7 @@ export const router= createBrowserRouter([
             {
                 path:'/courses/:id',
                 element:<CourseDetails></CourseDetails>,
-                loader:({params}) =>fetch(`http://localhost:5000/courses/${params.id}`)
+                loader:({params}) =>fetch(`https://e-learning-server-psi.vercel.app/courses/${params.id}`)
             },
             {
                 path:"/loginUser",
@@ -38,10 +38,6 @@ export const router= createBrowserRouter([
                 path:"/signup",
                 element:<SignUp></SignUp>
             },
-            {
-                path:"/dashboard",
-                element:<PrivatesRoute></PrivatesRoute>
-              },
 
         ]
     }

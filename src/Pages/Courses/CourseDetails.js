@@ -1,10 +1,13 @@
-import React, { useEffect, useState } from 'react';
-import { useLoaderData, useParams } from 'react-router-dom';
+import React, { useState } from 'react';
+import { useLoaderData } from 'react-router-dom';
 import CourseDetailsCard from './CourseDetailsCard';
 import Courses from './Courses';
 
 const CourseDetails = () => {
-    const info = useLoaderData();
+    //const [courseInfo,setCourseInfo] = useState();
+    const info  = useLoaderData();
+    //setCourseInfo(info)
+    console.log("info is ", info);
     return (
         <div className="container">
             <h3 className="text-center mt-2 mt-md-3">Our Courses </h3>
